@@ -48,7 +48,6 @@ class MainApp extends StatelessWidget {
               child: const Center(child: Text('Cuarto Container')), // Texto dentro del cuarto Container
             ),
             const SizedBox(height: 12.0), // Espacio de 12 píxeles entre los containers
-            
              Container(
               height: 148.0, // Altura de 148 píxeles
               color: Colors.transparent, // Color de fondo transparente para la separación
@@ -72,21 +71,6 @@ class MainApp extends StatelessWidget {
                       color: const Color.fromARGB(255, 0, 255, 34), // Color de fondo naranja
                     ),
                   ),
-                     const SizedBox(width: 12.0), // Espacio de 12 píxeles entre los containers
-                  
-                   Expanded(
-                    child: Container(
-                      color: const Color.fromARGB(255, 0, 115, 255), // Color de fondo naranja
-                    ),
-                  ),
-                      const SizedBox(width: 12.0), // Espacio de 12 píxeles entre los containers
-                 
-                   Expanded(
-                    child: Container(
-                      color: const Color.fromARGB(255, 5, 43, 11), // Color de fondo naranja
-                    ),
-                  ),
-                  
                 ],
               ),
             ),
@@ -96,41 +80,71 @@ class MainApp extends StatelessWidget {
             Container(
               height: 148.0, // Altura de 148 píxeles
               color: Colors.transparent, // Color de fondo transparente para la separación
-              child: ListView(
+              child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              
+                child: Row (
                   children: [
                     Container(
                       width: 180,
                       margin: const EdgeInsets.only(right: 12.0),
-                      color: const Color.fromARGB(255, 132, 255, 0), // Color de fondo naranja
+                      color: const Color.fromARGB(255, 255, 238, 0), // Color de fondo naranja
                       child: const Center(child: Text('Cont 1'))
                     ),
                         Container(
                       width: 180,
                       margin: const EdgeInsets.only(right: 12.0),
-                      color: const Color.fromARGB(255, 132, 255, 0), // Color de fondo naranja
+                      color: const Color.fromARGB(255, 255, 157, 0), // Color de fondo naranja
                       child: const Center(child: Text('Cont 1'))
                     ),
                         Container(
                       width: 180,
                       margin: const EdgeInsets.only(right: 12.0),
-                      color: const Color.fromARGB(255, 132, 255, 0), // Color de fondo naranja
+                      color: const Color.fromARGB(255, 255, 38, 0), // Color de fondo naranja
                       child: const Center(child: Text('Cont 1'))
                     ),
                         Container(
                       width: 180,
                       margin: const EdgeInsets.only(right: 12.0),
-                      color: const Color.fromARGB(255, 132, 255, 0), // Color de fondo naranja
+                      color: const Color.fromARGB(255, 255, 0, 89), // Color de fondo naranja
+                      child: const Center(child: Text('Cont 1'))
+                    ), 
+                            Container(
+                      width: 180,
+                      margin: const EdgeInsets.only(right: 12.0),
+                      color: const Color.fromARGB(255, 255, 0, 234), // Color de fondo naranja
+                      child: const Center(child: Text('Cont 1'))
+                    ), 
+                            Container(
+                      width: 180,
+                      margin: const EdgeInsets.only(right: 12.0),
+                      color: const Color.fromARGB(255, 149, 0, 255), // Color de fondo naranja
+                      child: const Center(child: Text('Cont 1'))
+                    ), 
+                            Container(
+                      width: 180,
+                      margin: const EdgeInsets.only(right: 12.0),
+                      color: const Color.fromARGB(255, 55, 0, 255), // Color de fondo naranja
+                      child: const Center(child: Text('Cont 1'))
+                    ), 
+                                  Container(
+                      width: 180,
+                      margin: const EdgeInsets.only(right: 12.0),
+                      color: const Color.fromARGB(255, 0, 149, 255), // Color de fondo naranja
+                      child: const Center(child: Text('Cont 1'))
+                    ), 
+                                    Container(
+                      width: 180,
+                      margin: const EdgeInsets.only(right: 12.0),
+                      color: const Color.fromARGB(255, 0, 255, 200), // Color de fondo naranja
                       child: const Center(child: Text('Cont 1'))
                     ), 
                     ],
                   ),
                 ),
+              ),
           ],
         ),
       ),
     );
   }
 }
-
